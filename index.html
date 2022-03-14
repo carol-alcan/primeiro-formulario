@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+   
+    <title>Ficha de Saúde</title>
+
+</head>
+
+<body>
+    
+<!--Cabeçalho com título e subtítulo-->
+<div>
+    <h1 id="titulo">Ficha de Saúde da Escola Elias Luis de Souza</h1>
+    <p id="subtitulo">Complete suas informações:</p>
+    <br>
+</div>
+
+<!--Início do formulário-->
+    <form>
+        <fieldset class="grupo">
+            <!--Campo do nome com legenda "nome completo"-->
+            <div class="campo">
+                <label for="nome"><strong>Nome Completo</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+        </fieldset>
+
+        <!--Campo de email-->
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+         </div>
+
+         <!--Campo com opções sobre a matrícula-->
+         <div class="campo">
+            <label><strong>Dados da Esolaridade:</strong></label>
+            <label>
+                <input type="radio" name="ano" value="Infantil I Creche" checked> Infantil I Creche
+            </label>
+            <label>
+                <input type="radio" name="ano" value="Fundamental 1"checked> Fundamental 1
+            </label>
+            <label>
+                <input type="radio" name="ano" value="Fundamental 2" checked> Fundamental 2
+            </label>
+         </div>
+
+          <!--Campo da turno do(a) estudente-->
+          <div class="campo">
+            <label for="turno"><strong>Dados do Turno:</strong></label>
+            <select id="turno" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Integral (Infantil e Creche)</option>
+                <option>Manhã</option>
+                <option>Tarde</option>
+            </select>
+        </div>
+
+         <!--Campo da situação do cartão de vacina do(a) estudente-->
+         <div class="campo">
+            <label for="turno"><strong>Cartão de vacina:</strong></label>
+            <select id="turno" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Atualizado</option>
+                <option>Atrasado</option>
+                <option>Sem informação</option>
+            </select>
+        </div>
+
+         <!--Campo em caso de emergência, quem deverá ser acionado primeiro?-->
+         <div class="campo">
+            <label for="turno"><strong>Em caso de emergência, quem deverá ser acionado primeiro?:</strong></label>
+            <select id="turno" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Pai</option>
+                <option>Mãe</option>
+                <option>Outro(a)</option>
+            </select>
+        </div>
+
+          <!--Campo o aluno tem alguma deficiência?-->
+          <div class="campo">
+            <label for="turno"><strong>Tem alguma deficiência?:</strong></label>
+            <select id="turno" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+            </select>
+        </div>
+
+        <fielset class="grupo">
+            <!--Campo para escolha de 1 ou mais opções-->
+            <div id="check">
+                <label><strong>Sobre a saúde do(a) aluno(a), tem ou já teve as seguintes doenças:</strong></label><br><br>
+                <input type="checkbox" id="afirmação1" value="Alérgico">
+                <label for="afirmação1">Alérgico</label>
+                <input type="checkbox" id="afirmação2" value="Caxumba">
+                <label for="afirmação2">Caxumba</label>
+                <input type="checkbox" id="afirmação3" value="Sarampo">
+                <label for="afirmação1">Sarampo</label>
+                <input type="checkbox" id="afirmação4" value="Rubêola">
+                <label for="afirmação4">Rubêola</label>
+                <input type="checkbox" id="afirmação5" value="Catapora">
+                <label for="afirmação5">Catapora</label>
+                <input type="checkbox" id="afirmação6" value="Coqueluche">
+                <label for="afirmação6">Coqueluche</label>
+                <input type="checkbox" id="afirmação7" value="Escarlatina">
+                <label for="afirmação7">Escarlatina</label>
+                <input type="checkbox" id="afirmação8" value="Epilético">
+                <label for="afirmação8">Epilético</label>
+                <input type="checkbox" id="afirmação9" value="Hemofilico">
+                <label for="afirmação9">Hemofilico</label>
+                <input type="checkbox" id="afirmação10" value="Asmático">
+                <label for="afirmação10">Asmático</label>
+                <input type="checkbox" id="afirmação11" value="Diabético">
+                <label for="afirmação11">Diabético</label>
+                <input type="checkbox" id="afirmação12" value="Cardíaco">
+                <label for="afirmação12">Cardíaco</label>
+            </div>
+        </fielset>
+
+        <!--Caixa de texto-->
+        <div class="campo">
+            <br>
+            <label for="tratamento"><strong>Está fazendo algum outro tipo de tratamento? Qual?:</label>
+            <textarea rowa="6" style="width: 26em" id="tratamento" name="tratamento"></textarea>
+        </div>
+
+        <!--Botão para enviar o cadastro-->
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
+   
+    </form>
+</body>
+</html>
